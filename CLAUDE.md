@@ -61,7 +61,9 @@ Keep the organizer grid as **one** `<div class="row">` of `col-lg-4 col-md-6 col
 
 ### Section backgrounds live in CSS, not HTML
 
-`#hero` and `#about` pull their photos from `assets/css/style.css` (`../img/hero-bg.jpg` and `../img/about-bg.jpg`), not from any `<img>` tag. Swapping the hero photo means editing that CSS rule, not the markup. `assets/img/` holds unused alternates (`hero-bg-0.jpg`, `background_1.jpg`, `background_2.jpg`, `venue-info-bg.jpg`, `subscribe-bg.jpg`).
+`#hero` and `#about` pull their photos from `assets/css/style.css` (`../img/atlanta-night.jpg` and `../img/about-bg.jpg`), not from any `<img>` tag. Swapping the hero photo means editing that CSS rule, not the markup. `assets/img/` holds unused alternates (`hero-bg-0.jpg`, `background_1.jpg`, `background_2.jpg`, `venue-info-bg.jpg`, `subscribe-bg.jpg`) left over from the theme.
+
+The hero photo is an Atlanta night skyline by ibuki Tsubo from Unsplash. The Unsplash License allows commercial use without attribution, but the footer credits the photographer anyway; keep that line if the photo stays.
 
 ### Sections that were removed
 
