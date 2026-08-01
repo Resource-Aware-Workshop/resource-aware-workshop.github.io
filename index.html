@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>NeurIPS 2026 Workshop on Resource-Aware Agentic AI</title>
+  <meta content="A NeurIPS 2026 workshop on building smarter AI agents that do more with less." name="description">
+  <meta content="agentic AI, LLM agents, efficiency, resource-aware, NeurIPS 2026, workshop" name="keywords">
+
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+    .schedule-table th,
+    .schedule-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    .schedule-table th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+    .schedule-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .schedule-table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+    @media (max-width: 768px) {
+      .schedule-table th,
+      .schedule-table td {
+        padding: 10px;
+      }
+    }
+
+    /* Unified organizer image styles */
+    #organizers .speaker {
+      margin-bottom: 35px;
+    }
+    #organizers .speaker img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    /* Unified speaker image styles */
+    #speakers .speaker img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    /* Text logo: the theme default is 36px uppercase, too wide next to this nav. */
+    #header #logo h1 {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 1200px) {
+      #header #logo h1 {
+        font-size: 17px;
+      }
+    }
+
+    .tba-note {
+      text-align: center;
+      font-size: 1.2em;
+      color: #6c757d;
+      padding: 30px 0;
+    }
+  </style>
+  </head>
+
+<body>
+
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <h1><a href="#hero" class="scrollto">Resource-Aware <span>Agentic AI</span></a></h1>
+      </div>
+
+      <!-- Every nav link must point at a section id that exists below, or scrollspy silently ignores it. -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#topic">Topics</a></li>
+          <li><a class="nav-link scrollto" href="#cfp">Call for Papers</a></li>
+          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
+          <li><a class="nav-link scrollto" href="mailto:resource-aware-workshop@googlegroups.com">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header><section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="200">
+      <h1 class="mb-4 pb-0" style="text-transform: none;">
+        NeurIPS 2026 Workshop on <br>
+        Resource-Aware Agentic AI
+      </h1>
+      <h2 class="mb-4 pb-0" style="text-transform: none; color: white;">
+        Building smarter AI agents that do more with less<br>
+        December 12-13, 2026<br>
+        Atlanta, Georgia, USA
+      </h2>
+    </div>
+  </section>
+  <main id="main">
+
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>About The Workshop</h2>
+            <p style="font-size: 18px;">
+              With the rapid advances in AI, we have witnessed a wave of breakthroughs in autonomous AI agents. Today's agents can write and debug code, solve competition-level mathematical problems, conduct deep research, and are increasingly deployed in everyday products and workflows.
+            </p>
+            <p style="font-size: 18px;">
+              However, most of these agents are designed to maximize task performance. They are largely unaware of the resources they consume, including the compute, energy, memory, latency, tool cost, and data required to train them. An agent that issues dozens of frontier model API calls, spawns many sub-agents, or repeatedly searches and re-plans may top a benchmark, but does so at a cost that is prohibitive in real deployment. As capabilities grow, this hidden resource footprint grows with them.
+            </p>
+            <p style="font-size: 18px;">
+              Designing <b>resource-aware agents</b> that reason about, account for, and adapt to their own resource budgets is becoming increasingly important. Resource awareness is essential to ensure that everyone, not only those with access to large compute budgets, can benefit from agents, and to remove a key barrier to the widespread real-world deployment of AI agents.
+            </p>
+            <p style="font-size: 18px;">
+              We organize this workshop to bring together academic and industrial experts to explore how to design agents that are both efficient and effective, from training to system deployment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="topic" class="section-with-bg">
+      <br>
+      <br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Topics</h2>
+          <p>Topics of interest include, but are not limited to:</p>
+        </div>
+        <section id="topics">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-12">
+                <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                  <ul style="font-size: 18px; color: #343a40; margin-bottom: 0; line-height: 2;">
+                    <li>Resource-aware planning and reasoning</li>
+                    <li>Model compression for agents</li>
+                    <li>Resource-aware multi-agent orchestration</li>
+                    <li>Resource-aware training and post-training of agents</li>
+                    <li>Resource-aware agent harness</li>
+                    <li>On-device agent deployment</li>
+                    <li>Memory and context management for resource-aware agents</li>
+                    <li>Benchmarks, metrics, and evaluation for agent resource consumption</li>
+                    <li>Economic and accessibility implications of resource-aware agents</li>
+                    <li>Industry applications of efficient agent deployment</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <br>
+      <br>
+    </section>
+
+    <section id="cfp">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Call For Papers</h2>
+        </div>
+        <p>
+          The <b>Workshop on Resource-Aware Agentic AI @ NeurIPS 2026</b> invites submissions of <b>4-page papers</b> in the NeurIPS format, with unlimited space for references and appendices. Work that has already been published is not allowed.
+        </p>
+
+        <h3>Key Dates</h3>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fa fa-check"></i></span><b>First Call for Papers</b>: July 15, 2026</li>
+          <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Submission Deadline</b>: <span style="color: red; font-weight: bold;">August 29, 2026, AoE</span></li>
+          <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Reviews Due</b>: September 20, 2026</li>
+          <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Notification Date</b>: September 29, 2026, AoE</li>
+          <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Workshop Date</b>: December 12-13, 2026 (exact day to be announced by NeurIPS)</li>
+        </ul>
+
+        <h3>Submission Site</h3>
+        <p>
+          Submissions will be managed via OpenReview. The submission portal link will be posted here when the first call for papers goes out. All authors must maintain up-to-date OpenReview profiles to ensure proper conflict-of-interest management and paper matching.
+          <a href="https://docs.openreview.net/getting-started/creating-an-openreview-profile">Learn how to create an OpenReview profile here</a>.
+        </p>
+
+        <h3>Review Process</h3>
+        <p>
+          The review process is <b>double-blind</b>: submission files must be anonymized. We follow the NeurIPS policy for conflicts of interest, and reviewers are required to enter both domain and individual conflicts prior to review assignment. Organizers and their students will not submit, and they will not review submissions from their own institution.
+        </p>
+
+        <h3>Non-Archival Policy</h3>
+        <p>
+          Accepted papers will be posted on the workshop website, but the workshop is <b>non-archival</b>.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Email us at <a href="mailto:resource-aware-workshop@googlegroups.com">resource-aware-workshop@googlegroups.com</a>.
+        </p>
+      </div>
+    </section>
+
+    <section id="speakers" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Speakers and Panelists</h2>
+        </div>
+        <p class="tba-note">To be announced.</p>
+      </div>
+    </section>
+
+    <section id="schedule" style="padding-top: 20px;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Schedule</h2>
+        </div>
+        <p class="tba-note">To be announced.</p>
+      </div>
+    </section>
+
+    <section id="organizers" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Organizers</h2>
+          <p>This workshop is organized by</p>
+        </div>
+
+        <!-- One row, 3-up on large screens and 2-up below, so six cards always divide evenly. -->
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+              <img src="assets/img/organizers/kai-wei_chang.jpg" alt="Kai-Wei Chang" class="img-fluid">
+              <br><a href="https://web.cs.ucla.edu/~kwchang/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Kai-Wei Chang</a></br>
+              <p>UCLA</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150" style="text-align: center;">
+              <img src="assets/img/organizers/dakuo_wang.jpg" alt="Dakuo Wang" class="img-fluid">
+              <br><a href="https://www.dakuowang.com/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Dakuo Wang</a></br>
+              <p>Northeastern University</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/organizers/luke_zettlemoyer.jpg" alt="Luke Zettlemoyer" class="img-fluid">
+              <br><a href="https://homes.cs.washington.edu/~lsz/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Luke Zettlemoyer</a></br>
+              <p>University of Washington / Meta</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250" style="text-align: center;">
+              <img src="assets/img/organizers/jiri_gesi.jpg" alt="Jiri Gesi" class="img-fluid">
+              <br><a href="https://jirigesi.github.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Jiri Gesi</a></br>
+              <p>Microsoft</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
+              <img src="assets/img/organizers/weijia_shi.jpg" alt="Weijia Shi" class="img-fluid">
+              <br><a href="https://weijiashi.notion.site/swj" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Weijia Shi</a></br>
+              <p>Meta / Cornell Tech (incoming)</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="350" style="text-align: center;">
+              <img src="assets/img/organizers/yuxuan_lu.jpg" alt="Yuxuan Lu" class="img-fluid">
+              <br><a href="https://yuxuan.lu/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Yuxuan Lu</a></br>
+              <p>Northeastern University</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+
+  </main><footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        </div>
+      <div class="credits">
+        Template adopted from <a href="https://set-llm.github.io/">SeT LLM @ ICLR 2024</a>
+      </div>
+    </div>
+  </footer><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
