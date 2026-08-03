@@ -12,6 +12,8 @@ Page content comes from the workshop proposal at `../neurips_workshop_proposal/p
 
 Where the NeurIPS 2026 acceptance email supersedes the proposal, the email wins: location is **Atlanta**, the workshop falls on **December 12-13, 2026** (exact day still pending from NeurIPS), and the **mandatory** accept/reject notification date is **September 29, 2026** rather than the proposal's September 28.
 
+The page limit on the live site is **up to 8 pages excluding references and appendices**, a deliberate organizer decision that overrides the proposal's 4 pages. Do not "correct" it back to match `proposal.tex`.
+
 ## Working on it
 
 Preview locally (relative asset paths require a server, `file://` breaks them):
