@@ -59,7 +59,7 @@ Sections live inside `<main id="main">` and follow a strict pattern. Breaking it
 
 Add or remove people by duplicating or deleting one `col-*` block. Photos go in `assets/img/{speakers,organizers}/` named `first_last.jpg`; the six organizer headshots were pulled from each person's own homepage. Images are cropped to circles by CSS, not by the file, so any roughly square photo works, but a portrait with the face off-center gets cropped badly (Yuxuan Lu's is the current example).
 
-Keep the organizer grid as **one** `<div class="row">` of `col-lg-4 col-md-6 col-6` cards. Six divides evenly by both 3 and 2, so no row ends up with an orphan card. Splitting people across two `row` divs, which the original theme did, is what produced the ragged layout.
+Keep the organizer grid as **one** `<div class="row justify-content-center">`. Splitting people across two `row` divs, which the original theme did, is what produced the ragged layout. The column classes are currently `col-lg-3 col-md-6 col-6`, chosen for **seven** organizers: 4-up on large screens leaves a centered row of 3 rather than a single orphan card. If the roster size changes, re-pick the `col-lg-*` value so the last row is either full or close to it (six people wanted `col-lg-4`).
 
 ### Section backgrounds live in CSS, not HTML
 
