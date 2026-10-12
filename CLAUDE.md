@@ -10,7 +10,9 @@ The remote is `git@github.com:Resource-Aware-Workshop/resource-aware-workshop.gi
 
 Page content comes from the workshop proposal at `../neurips_workshop_proposal/proposal.tex` (summary, topic list, submission timeline, organizer list). Treat that file as the source of truth when updating copy, and do not invent details it does not state. Speakers, panelists, the schedule, and the OpenReview link are deliberately "to be announced" on the live page, even though the proposal names four confirmed speakers.
 
-Where the NeurIPS 2026 acceptance email supersedes the proposal, the email wins: location is **Atlanta**, the workshop falls on **December 12-13, 2026** (exact day still pending from NeurIPS), and the **mandatory** accept/reject notification date is **September 29, 2026** rather than the proposal's September 28.
+Where the NeurIPS 2026 acceptance email supersedes the proposal, the email wins: location is **Atlanta**, the workshop is on **December 13, 2026** (a Sunday; NeurIPS assigned the day out of the December 12-13 Atlanta window), and the **mandatory** accept/reject notification date is **September 29, 2026** rather than the proposal's September 28.
+
+The review deadline was extended to **September 26, 2026, AoE**, one day after the ICLR deadline. The camera-ready and code release deadline is **October 23, 2026, AoE**. Neither date appears in `proposal.tex`.
 
 The page limit on the live site is **up to 8 pages excluding references and appendices**, a deliberate organizer decision that overrides the proposal's 4 pages. Do not "correct" it back to match `proposal.tex`.
 
